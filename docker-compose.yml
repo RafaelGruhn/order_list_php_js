@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  php:
+    container_name: php_and_js
+    build:
+      context: ./php
+    volumes:
+      - ./php/:/var/www/html/
+    ports:
+      - 8000:80
